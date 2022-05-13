@@ -1,0 +1,64 @@
+.files input {
+  outline: 2px dashed #ff405d;
+  outline-offset: -10px;
+  -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+  transition: outline-offset .15s ease-in-out, background-color .15s linear;
+  padding: 120px 0px 85px 35%;
+  text-align: center !important;
+  margin: 0;
+  width: 100% !important;
+}
+
+.files input:focus {
+  outline: 2px dashed #ff405d;
+  outline-offset: -10px;
+  -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+  transition: outline-offset .15s ease-in-out, background-color .15s linear;
+  border: 1px solid #ff405d;
+}
+
+.files {
+  position: relative;
+}
+
+.files:after {
+  content: "\f093";
+  pointer-events: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 50px;
+  right: 0;
+  height: 56px;
+  font-family: "fontawesome";
+  font-size: 50px;
+  color: rgba(0,0,0,.2);
+  /*background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png);*/
+  display: block;
+  margin: 0 auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.color input {
+  background-color: #ff405d1a;
+  /*opacity: 0;*/
+}
+
+.files:before {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  right: 0;
+  height: 57px;
+  content: " or drag it here. ";
+  display: block;
+  margin: 0 auto;
+  color: #ff405d;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+

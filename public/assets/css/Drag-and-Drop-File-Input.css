@@ -1,0 +1,41 @@
+.file-drop-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 22px 19px;
+  border: 2px dashed #ff405d;
+  border-radius: 3px;
+  background: #fff;
+  transition: 0.2s;
+}
+.file-drop-area.is-active {
+  border-style: solid;
+}
+
+.file-msg {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #868e96;
+  text-overflow: ellipsis;
+  margin: 0px auto;
+}
+
+.file-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.file-input:focus {
+  outline: none;
+}
+

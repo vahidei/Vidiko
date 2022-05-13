@@ -1,0 +1,156 @@
+.bubbles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+
+.bubble {
+  position: absolute;
+  left: var(--bubble-left-offset);
+  bottom: -75px;
+  z-index: 0;
+  display: block;
+  width: var(--bubble-radius);
+  height: var(--bubble-radius);
+  animation: float-up var(--bubble-float-duration) 0s ease-in infinite;
+}
+
+.bubble::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/check.svg) no-repeat;
+  background-size: 100% 100%;
+  animation: var(--bubble-sway-type) var(--bubble-sway-duration) var(--bubble-sway-delay) ease-in-out alternate infinite;
+}
+
+.bubble:nth-child(1) {
+  --bubble-left-offset: 10%;
+  --bubble-radius: 30px;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 3s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-left-to-right;
+}
+
+.bubble:nth-child(2) {
+  --bubble-left-offset: 5%;
+  --bubble-radius: 20px;
+  --bubble-float-duration: 6s;
+  --bubble-sway-duration: 3s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-left-to-right;
+}
+
+.bubble:nth-child(3) {
+  --bubble-left-offset: 30%;
+  --bubble-radius: 15px;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 3s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-left-to-right;
+}
+
+.bubble:nth-child(4) {
+  --bubble-left-offset: 18%;
+  --bubble-radius: 19px;
+  --bubble-float-duration: 9s;
+  --bubble-sway-duration: 3s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-left-to-right;
+}
+
+.bubble:nth-child(5) {
+  --bubble-left-offset: 40%;
+  --bubble-radius: 18px;
+  --bubble-float-duration: 8s;
+  --bubble-sway-duration: 3s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-left-to-right;
+}
+
+.bubble:nth-child(6) {
+  --bubble-left-offset: 64%;
+  --bubble-radius: 30px;
+  --bubble-float-duration: 12s;
+  --bubble-sway-duration: 3s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-left-to-right;
+}
+
+.bubble:nth-child(7) {
+  --bubble-left-offset: 90%;
+  --bubble-radius: 8px;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 3s;
+  --bubble-float-delay: 0s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-right-to-left;
+}
+
+.bubble:nth-child(8) {
+  --bubble-left-offset: 96%;
+  --bubble-radius: 25px;
+  --bubble-float-duration: 7s;
+  --bubble-sway-duration: 3s;
+  --bubble-float-delay: 4s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-left-to-right;
+}
+
+.bubble:nth-child(9) {
+  --bubble-left-offset: 72%;
+  --bubble-radius: 13px;
+  --bubble-float-duration: 9s;
+  --bubble-sway-duration: 3s;
+  --bubble-float-delay: 3s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-left-to-right;
+}
+
+.bubble:nth-child(10) {
+  --bubble-left-offset: 81%;
+  --bubble-radius: 20px;
+  --bubble-float-duration: 11s;
+  --bubble-sway-duration: 5s;
+  --bubble-float-delay: 2s;
+  --bubble-sway-delay: 2s;
+  --bubble-sway-type: sway-left-to-right;
+}
+
+@keyframes float-up {
+  to {
+    transform: translateY(-175vh);
+  }
+}
+
+@keyframes sway-left-to-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes sway-right-to-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+

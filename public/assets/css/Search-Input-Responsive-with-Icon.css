@@ -1,0 +1,48 @@
+.form-control-borderless {
+  border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.menu-toggle {
+}
+
+.navbar-brand.float-left {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 100;
+}
+
+.navbar-brand.vidiko-logo:hover {
+  width: 163px !important;
+  min-width: auto;
+  background: rgba(255,255,255,.9) !important;
+  /*max-width: auto;*/
+  /*text-align: left !important;*/
+}
+
+.navbar-brand.vidiko-logo:hover img {
+  margin: 0px 0px !important;
+}
+
+.navbar-brand.vidiko-logo img.brand-text {
+  visibility: hidden;
+}
+
+.navbar-brand.vidiko-logo:hover img.brand-text {
+  visibility: visible;
+  height: 30px;
+  opacity: 1 !important;
+}
+
+#sidebar-wrapper {
+}
+
+.collapse.navbar-collapse {
+}
+

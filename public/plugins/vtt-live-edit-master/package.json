@@ -1,0 +1,35 @@
+{
+  "name": "vtt-live-edit",
+  "version": "1.0.7",
+  "description": "Live edit VTT subtitles (delay, sync, position, style...) on html5 native player",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funkyremi/vtt-live-edit.git"
+  },
+  "keywords": [
+    "webvtt",
+    "vtt",
+    "subtitles",
+    "captions",
+    "tracks",
+    "shift",
+    "offset",
+    "sync",
+    "position",
+    "style"
+  ],
+  "author": "Rémi Testa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/funkyremi/vtt-live-edit/issues"
+  },
+  "homepage": "https://github.com/funkyremi/vtt-live-edit#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4.9.0"
+  }
+}
